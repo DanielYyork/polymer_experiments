@@ -1,0 +1,12 @@
+tolerance 2.0
+output /scratch/scw1977/dan/polymer_md/simulation_systems/solvated_monomers//3HV_monomer_solvated_water_20.pdb
+filetype pdb
+structure /scratch/scw1977/dan/polymer_md/pdb_files/molecules/3HV_monomer.pdb
+    number 1
+    inside cube 0. 0. 0. 20.
+    fixed 10. 10. 10. 0. 0. 0.
+end structure
+structure /scratch/scw1977/dan/polymer_md/pdb_files/molecules/water.pdb
+    number 392
+    inside cube 0. 0. 0. 20.
+end structure
