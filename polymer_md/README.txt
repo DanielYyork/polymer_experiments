@@ -10,9 +10,11 @@ To run the script in Supercomputing wales there are a series of steps to follow:
        <csv_file>: CSV file with names and smilestrings of each compound to solvate.
        <box_size>: Size of the box for simulations in the form 20.0 (MUST BE A FLOAT).
        <solvent_type>: Type of the solvent for solvation, e.g., water/ethanol.
-       <input_directory>: Filepath to the solvated monomers input directory.  
+       <input_directory>: Filepath to the solvated monomers input directory. i.e. /scratch/scw1977/dan/polymer_md/simulation_systems/packmol_inputs/ 
+
   - Recommended: python3 spdsbsfromcsvs.py <csv_file> <box_size> <solvent_type> <input_directory> > experiment_1.txt
-    = "experiment_1.txt" will contain any outputs from the script
+    - "experiment_1.txt" will contain any outputs from the script
+
   -NOTE: A series of files are made with this script:
     pdbfiles of each molecule/solvent in the csv in: "polymer_md/pdb_files/molecules/"
     packmol input files for solvated systems of monomers in: "polymer_md/simulation_systems/packmol_inputs"
